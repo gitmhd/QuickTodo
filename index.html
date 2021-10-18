@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="html-container">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- CSS files -->
+      <link rel="stylesheet" href="css/flex-grids.min.css" />
+      <link rel="stylesheet" href="css/main.css" />
+   </head>
+   <body class="body-content">
+      <!-- Todo app -->
+      <div id="todo-app">
+         <!-- Start main header -->
+         <header class="main">
+            <div class="row">
+               <div class="col">
+                  <div>
+                     <span>{{ monthDay }}</span>
+                  </div>
+                  <div>
+                     <span>{{ month }}</span>
+                     <span>{{ year }}</span>
+                  </div>
+               </div>
+               <div class="col">{{ weekDay }}</div>
+            </div>
+         </header>
+         <!-- End main header -->
+
+         <!-- Start todos section -->
+         <section class="todos-section">
+            <ul class="unstyled-list todos" v-if="renderTodo">
+               <li v-for="todo in todoList" track-by="$index">
+                  <span class="todo" @click="deleteTodo">{{ todo }}</span>
+                  <span
+                     :id="'todo_' + todo.replaceAll(' ', '')"
+                     class="check"
+                     @click="checkTodo"
+                  ></span>
+               </li>
+            </ul>
+         </section>
+         <!-- End todos section -->
+
+         <!-- Start add button -->
+         <button @click="showAddInput" id="add-btn" class="btn-add">+</button>
+         <!-- End add button -->
+
+         <!-- Start add input -->
+         <form id="add-input" @submit.prevent="addTodo">
+            <input
+               type="text"
+               name="add-input"
+               autocomplete="off"
+               v-model="input"
+            />
+         </form>
+         <!-- End add input -->
+      </div>
+
+      <!-- JS files -->
+      <script src="js/vue.js"></script>
+      <script src="js/today.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>

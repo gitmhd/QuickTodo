@@ -1,0 +1,151 @@
+/* Start global style */
+
+html.html-container {
+   border: 4px solid #575b6b41;
+}
+body.body-content {
+   font-size: 16px;
+   padding: 20px 20px 80px;
+   color: #575b6b;
+   background-color: #fff;
+   min-width: 310px;
+}
+
+/* End global style */
+
+/* Start utilites */
+
+.body-content .unstyled-list {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+/* End utilites */
+
+/* Start main header */
+
+.body-content header.main .row .col:first-of-type {
+   display: flex;
+}
+.body-content header.main .row .col:first-of-type div {
+   width: 36px;
+}
+.body-content header.main .row .col:first-of-type div:first-of-type {
+   font-size: 1.7em;
+}
+.body-content header.main .row .col:first-of-type div:last-of-type {
+   font-size: 0.8em;
+   text-transform: uppercase;
+}
+.body-content header.main .row .col:last-of-type {
+   text-transform: uppercase;
+   font-size: 0.9em;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+/* End main header */
+
+/* Start todos section */
+
+.body-content .todos-section ul {
+   margin-top: 40px;
+   line-height: 3;
+}
+.body-content .todos-section ul li {
+   position: relative;
+   font-size: 0.9em;
+   padding-right: 25px;
+}
+.body-content .todos-section ul li .todo.done {
+   opacity: 0.4;
+}
+.body-content .todos-section ul li .todo:hover {
+   cursor: pointer;
+   text-decoration: line-through;
+}
+.body-content .todos-section ul li > .check {
+   position: absolute;
+   right: 0;
+   top: 10px;
+   display: block;
+   width: 22px;
+   height: 22px;
+   border-radius: 50%;
+   border: 2px solid #575b6b41;
+   cursor: pointer;
+   transition: border 0.3s ease-in-out;
+}
+.body-content .todos-section ul li > .check:hover {
+   border-color: #50e3a4;
+}
+.body-content .todos-section ul li > .check.checked {
+   border-color: #50e3a4;
+}
+.body-content .todos-section ul li > .check.checked::after {
+   position: absolute;
+   top: -52px;
+   content: "\2713";
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+   font-size: 2.5em;
+   color: #50e3a4;
+   height: 0;
+}
+
+/* End todos section */
+
+/* Start add button */
+.body-content .btn-add {
+   display: block;
+   width: 60px;
+   height: 60px;
+   line-height: 60px;
+   text-align: center;
+   border-radius: 50% 50% 0 0;
+   border: none;
+   color: rgba(87, 91, 107, 0.25);
+   background-color: #50e3a4;
+   cursor: pointer;
+   box-shadow: 0 0 3px #ccc;
+   position: fixed;
+   bottom: 0;
+   left: 50%;
+   margin-left: -30px;
+   font-size: 2em;
+   transition: box-shadow 0.3s ease-in-out;
+}
+.body-content .btn-add:hover {
+   box-shadow: none;
+}
+
+/* End add button */
+
+/* Start add input */
+
+.body-content form {
+   display: none;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+}
+
+.body-content form input {
+   display: block;
+   width: 100%;
+   padding: 15px 20px;
+   border: none;
+   border-bottom: 4px solid #575b6b41;
+   box-shadow: 0 -3px 6px #ccc;
+   color: inherit;
+   font-size: inherit;
+   font-family: inherit;
+}
+.body-content form input:focus {
+   outline: none;
+   border-color: #50e3a4;
+}
+
+/* End add input */
