@@ -43,8 +43,8 @@ A lightweight Chrome extension for listing and managing your todo(s).
 
 ## Author
 
-Mouhammad Albissaty Saleh
-Github Account: [https://github/gitmhd](https://github/gitmhd)
+Mouhammad Albissaty Saleh  
+Github Account: [https://github/gitmhd](https://github/gitmhd)  
 Visit my developer portfolio: [https://mouhammad.tech](https://mouhammad.tech)
 
 ## License
