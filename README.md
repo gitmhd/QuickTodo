@@ -30,7 +30,7 @@ A lightweight Chrome extension for listing and managing your todo(s).
 - `js/` – JavaScript files for functionality
   - `main.js` – Main logic for todo management
   - `today.js` – Handles date
-  - `vue.js` – Vue.js library (if used)
+  - `vue.js` – Vue.js library
 - `css/` – Stylesheets
   - `main.css` – Main styles
   - `flex-grids.min.css` – Grid layout styles
@@ -43,7 +43,9 @@ A lightweight Chrome extension for listing and managing your todo(s).
 
 ## Author
 
-[https://github/gitmhd](https://github/gitmhd)
+Mouhammad Albissaty Saleh
+Github Account: [https://github/gitmhd](https://github/gitmhd)
+Visit my developer portfolio: [https://mouhammad.tech](https://mouhammad.tech)
 
 ## License
 
