@@ -29,7 +29,7 @@ A lightweight Chrome extension for listing and managing your todo(s).
 - `index.html` – Popup HTML UI
 - `js/` – JavaScript files for functionality
   - `main.js` – Main logic for todo management
-  - `today.js` – (Optional) Additional features
+  - `today.js` – Handles date
   - `vue.js` – Vue.js library (if used)
 - `css/` – Stylesheets
   - `main.css` – Main styles
