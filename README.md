@@ -1,6 +1,6 @@
 # QuickTodo Chrome Extension
 
-A lightweight Chrome extension for listing and managing your todo(s).
+A lightweight extension that helps you to list your to-do while surfing the internet so you can track your works on the internet.
 
 ## Features
 
